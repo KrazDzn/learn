@@ -17,6 +17,21 @@
       font-weight: bold;
       
     }
+    div1 {
+		  border: 3px solid blue;
+
+		}
+    div2 {
+		  border: 3px dotted blue;
+      
+		}
+    table {
+        border: 2px solid black;
+    }
+    th, td{
+      border: 1px solid black;
+    }
+
   </style>
 </head>
 
@@ -24,8 +39,8 @@
   <h1 style="color:blue;text-align:center;">Hello World! Hello Again!</h1>
   <h1 style="color:#FFD700;text-align:center;">Hello World! Hello Again!</h1>
   <h1><div>This is the largest headline</div></h1>
-  <h2>This is also a large headline</h2>
-  <h3>This is slightly smaller headline</h3>
+  <h2><div1>This is also a large headline</div1></h2>
+  <h3><div2>This is slightly smaller headline</div2></h3>
   <h4>This is even smaller headline</h4>
   <h5>This is the second smallest healine</h5>
   <h6>This is the smallest headline</h6>
@@ -65,8 +80,49 @@
     <input type="text" placeholder-"Full Name" name="Name"
     <button>Submit</button
   </form>
+  <form>
+    <fieldset>
+    <legend>Sign In:</legend>
+    Username<input type="text" name="username"><br>
+    Password<input type="password" name="password"><br>
+    <button>Submit</button
+    </fieldset>
+  </form>
+  
+  <form>
+    Do you like candy?<br>
+    <select name="candy">
+      <option value="yes">Yes!</option>
+      <option value="no">No!</option>
+    </select>
+  </form>
 
+  <form>
+    What movies do you like?<br>
+    <input type="checkbox" name="action"
+  value="action">Action<br>
+    <input type="checkbox" name="drama"
+  value="action">Drama<br>   
+    <input type="checkbox" name="comedy"
+  value="action">Comedy<br>
+  </form>
 
+<form>
+  Do you like candy?<br>
+  <input type="radio" name="candy" 
+value="yes">Yes!<br>
+  <input type="radio" name="candy"
+value="no">No!
+</form>
+
+<form>
+  <input type="username" name="Username"><br>
+  <input type="Password" name="password"><br>
+  <input type="submit" value="Login">
+</form>
+<ol>
+  <li><a href="http://facebook.com">FB</a></li>
+</ol>
 
 
 </body>
