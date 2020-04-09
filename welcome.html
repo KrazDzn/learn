@@ -2,7 +2,26 @@
 <html>
     <head>
         <title>Welcome</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <style>
+            
+            @media (min-width: 500px) {
+                body { 
+                    background-color: darkgray;
+                }
+            }
+
+            @media (max-width: 499px) {
+                body { 
+                    background-color: darksalmon;
+                }
+            }
+            p::selection {
+                color:rgb(214, 0, 43);
+                background-color: darkgray;
+            }
             a::before {
                 content: "\21d2 Click here:";
                 font-weight: bold;
@@ -10,7 +29,7 @@
             button {
                 width: 25%;
                 height: 100px;
-                background-color: black;
+                background-color: darkslategrey;
                 font-size: 36px;
                 font-weight: bold;
                 font-family:Arial, Helvetica, sans-serif;
@@ -18,33 +37,35 @@
 
             button:hover {
                 background-color: blanchedalmond;
+                color:cadetblue;
             }
             ol li {
                 color: red;
             }
             
-            input[type=text] {
+            form1 input[type=text] {
                 background-color: red;
             }
-            input[type=number] {
+            form1 input[type=number] {
                 background-color: yellow;
             }
         </style>
     </head>
 
     <body>
-        <h1>WELCOME</h1>
+        <h1>Welcome!</h1>
         <br>
         <ul>
             <li><a href="#">one link</a></li>
             <li><a href="#">another link</a></li>
             <li><a href="#">third link</a></li>
         </ul>
-    <form>
+    <form1>
         <input name="name" type="text" placeholder="First Name">
         <input name="name" type="text" placeholder="Last Name">
         <input name="name" type="number" placeholder="Age">
-    </form>
+    </form1>
+        <br>
         <br>
     <form>
         <div>
