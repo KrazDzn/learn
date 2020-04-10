@@ -8,13 +8,18 @@
         <style>
 
             @media (max-width: 499px) {
+                h1::before {
+                        content: "Welcome!";}
                 body { 
                     background-color: darksalmon;
                 }
             }
 
             @media (min-width: 500px) {
-                body { 
+                h1::before {
+                    content: "Welcome To My WebPage!";
+                }
+                body {
                     background-color: darkgray;
                 }
             }
@@ -67,7 +72,7 @@
     </head>
 
     <body>
-        <h1>Welcome!</h1>
+        <h1></h1>
         <br>
         <ul>
             <li><a href="#">one link</a></li>
